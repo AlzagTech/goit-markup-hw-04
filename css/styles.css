@@ -234,7 +234,7 @@ ul {
 
 .footer .container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .social-links .text {
@@ -250,15 +250,22 @@ ul {
   margin-right: 70px;
 }
 
-.footer .social-links {
-  padding-bottom: 40px;
+.social-list {
+  display: flex;
+  align-items: center;
+}
+
+.social-list .item {
+  width: 44px;
+  height: 44px;
 }
 
 .social-list .link {
-  display: block;
-  width: 44px;
-  height: 44px;
-  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 
@@ -388,12 +395,14 @@ ul {
 }
 
 .card-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--button-bg-color);
   border-radius: 4px;
-  padding: 25px 100px;
 }
 
 /* Чим ми займаємось */
@@ -456,23 +465,6 @@ ul {
   margin-bottom: 16px;
 }
 
-.social-list {
-  display: flex;
-  align-items: center;
-}
-
-.social-list .link {
-  display: block;
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-  border-radius: 50%;
-}
-
-.social-list .item:not(:last-child) {
-  margin-right: 10px;
-}
-
 .social-list .link {
   fill: var(--primary-icon-color);
 }
@@ -496,10 +488,12 @@ ul {
 }
 
 .clients-list .link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
 }
@@ -583,7 +577,9 @@ ul {
   text-decoration: none;
 }
 
-.projects .item:hover {
+.projects .link:hover,
+.projects .link:focus {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
