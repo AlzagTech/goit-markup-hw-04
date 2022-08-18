@@ -477,10 +477,6 @@ ul {
 
 /* Постійні клієнти */
 
-.clients.section {
-  padding-bottom: 127px;
-}
-
 .clients-list {
   display: flex;
   align-items: center;
